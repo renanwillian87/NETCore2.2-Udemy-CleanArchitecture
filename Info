@@ -1,0 +1,21 @@
+FOLDER AND GIT 
+NETCore2.2-Udemy-CleanArchitecture
+
+## Create dotnet sln by scratch
+
+-- Create Solution
+$ dotnet new sln -n CleanArchitecture
+-- Create Folder Structure
+$ mkdir Application
+$ mkdir Domain
+$ mkdir Infra.Data
+$ mkdir Infra.IoC
+$ mkdir Presentation.UI.Mvc
+-- Create MVC 
+$ dotnet new mvc -n CleanArchitecture.UI.Mvc
+-- Add Reference 
+$ dotnet sln add Presentation.UI.Mvc/Presentation.UI.Mvc/CleanArchitecture.UI.Mvc.csproj
+
+
+## Create GIT Repo by scratch
+
