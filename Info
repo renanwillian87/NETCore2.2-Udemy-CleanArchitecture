@@ -12,13 +12,16 @@ $ mkdir Infra.Data
 $ mkdir Infra.IoC
 $ mkdir Presentation.UI.Mvc
 -- Create MVC 
-$ dotnet new mvc -n CleanArchitecture.UI.Mvc -au Individual --framework
--- Add Reference 
+$ dotnet new mvc -n CleanArchitecture.UI.Mvc -au Individual --framework 
+-- Add reference to SLN
 $ dotnet sln add Presentation.UI.Mvc/Presentation.UI.Mvc/CleanArchitecture.UI.Mvc.csproj
-
+-- Add reference to project
 
 ## Migration
 --Install
 $ dotnet tool install --global dotnet-ef
 $ dotnet add package Microsoft.EntityFrameworkCore.Design
+
+
+## SQL Server
 
