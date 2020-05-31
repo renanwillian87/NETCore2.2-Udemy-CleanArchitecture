@@ -12,10 +12,13 @@ $ mkdir Infra.Data
 $ mkdir Infra.IoC
 $ mkdir Presentation.UI.Mvc
 -- Create MVC 
-$ dotnet new mvc -n CleanArchitecture.UI.Mvc
+$ dotnet new mvc -n CleanArchitecture.UI.Mvc -au Individual --framework
 -- Add Reference 
 $ dotnet sln add Presentation.UI.Mvc/Presentation.UI.Mvc/CleanArchitecture.UI.Mvc.csproj
 
 
-## Create GIT Repo by scratch
+## Migration
+--Install
+$ dotnet tool install --global dotnet-ef
+$ dotnet add package Microsoft.EntityFrameworkCore.Design
 
