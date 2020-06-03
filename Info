@@ -3,25 +3,34 @@ NETCore2.2-Udemy-CleanArchitecture
 
 ## Create dotnet sln by scratch
 
--- Create Solution
+# create solution
 $ dotnet new sln -n CleanArchitecture
--- Create Folder Structure
+
+# create folder structure
 $ mkdir Application
 $ mkdir Domain
 $ mkdir Infra.Data
 $ mkdir Infra.IoC
 $ mkdir Presentation.UI.Mvc
--- Create MVC 
-$ dotnet new mvc -n CleanArchitecture.UI.Mvc -au Individual --framework 
--- Add reference to SLN
-$ dotnet sln add Presentation.UI.Mvc/Presentation.UI.Mvc/CleanArchitecture.UI.Mvc.csproj
--- Add reference to project
 
-## Migration
---Install
+# create MVC 
+$ dotnet new mvc -n CleanArchitecture.UI.Mvc -au Individual --framework 
+
+# create classlib
+$ dotnet new classlib -n CleanArchitecture.Application -f netcoreapp2.1
+
+# add reference to SLN
+$ dotnet sln add Presentation.UI.Mvc/Presentation.UI.Mvc/CleanArchitecture.UI.Mvc.csproj
+
+# add reference to project
+
+
+
+# migration
+# install
 $ dotnet tool install --global dotnet-ef
 $ dotnet add package Microsoft.EntityFrameworkCore.Design
 
 
-## SQL Server
+# SQL Server
 
