@@ -5,6 +5,6 @@ namespace CleanArchitecture.Application.ViewModels
 {
     public class CourseViewModel
     {
-        public IEnumerable<Course> Corses { get; set; }
+        public IEnumerable<Course> Courses { get; set; }
     }
 }
