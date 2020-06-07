@@ -13,6 +13,7 @@ using CleanArchitecture.UI.Mvc.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using CleanArchitecture.Infra.Data.Context;
+using CleanArchitecture.Infra.IoC;
 
 namespace CleanArchitecture.UI.Mvc
 {
@@ -47,6 +48,8 @@ namespace CleanArchitecture.UI.Mvc
             });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            RegisterServices(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -75,6 +78,11 @@ namespace CleanArchitecture.UI.Mvc
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+        }
+
+        private static void RegisterServices(IServiceCollection services)
+        {
+            DependencyContainer.RegisterServices(services);
         }
     }
 }
