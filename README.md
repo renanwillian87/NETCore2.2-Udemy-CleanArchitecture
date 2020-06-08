@@ -11,7 +11,7 @@ https://www.udemy.com/course/getting-started-with-net-core-clean-architecture/
 - Application
   - Interfaces(services)
   - Services
- - ViewModels
+   - ViewModels
 - Domain
    - Interfaces(repositories)
    - Models
