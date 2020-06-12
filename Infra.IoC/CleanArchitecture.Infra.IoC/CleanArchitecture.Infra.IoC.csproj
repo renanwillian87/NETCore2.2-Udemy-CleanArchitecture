@@ -11,7 +11,9 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Application\CleanArchitecture.Application\CleanArchitecture.Application.csproj" />
     <ProjectReference Include="..\..\Domain\CleanArchitecture.Domain\CleanArchitecture.Domain.csproj" />
+    <ProjectReference Include="..\..\Domain\CleanArchitecture.Domain.Core\CleanArchitecture.Domain.Core.csproj" />
     <ProjectReference Include="..\..\Infra.Data\CleanArchitecture.Infra.Data\CleanArchitecture.Infra.Data.csproj" />
+    <ProjectReference Include="..\..\Infra.Bus\CleanArchitecture.Infra.Bus\CleanArchitecture.Infra.Bus.csproj" />
   </ItemGroup>
 
 </Project>

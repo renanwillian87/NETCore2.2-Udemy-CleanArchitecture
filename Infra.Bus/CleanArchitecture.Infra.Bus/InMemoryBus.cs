@@ -13,7 +13,7 @@ namespace CleanArchitecture.Infra.Bus
             _mediator = mediator;
         }
 
-        public Task SendCommand<T>(T command) where T : CommandBehavior
+        public Task SendCommand<T>(T command) where T : Command
         {
             return _mediator.Send(command);
         }

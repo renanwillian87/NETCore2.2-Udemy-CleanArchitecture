@@ -16,7 +16,7 @@ namespace CleanArchitecture.Infra.Data.Repository
 
         public void Add(Course course)
         {
-            _context.Course.Add(course);
+            _context.Courses.Add(course);
             _context.SaveChanges();
         }
 

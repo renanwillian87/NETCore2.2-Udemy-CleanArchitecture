@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation.UI.Mvc", "Pres
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.UI.Mvc", "Presentation.UI.Mvc\CleanArchitecture.UI.Mvc\CleanArchitecture.UI.Mvc.csproj", "{565BA09B-8C1F-415B-9A65-4E782679DF32}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra.Bus", "Infra.Bus", "{138097D9-8EB4-4CD1-A05C-AF1D9837616E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Infra.Bus", "Infra.Bus\CleanArchitecture.Infra.Bus\CleanArchitecture.Infra.Bus.csproj", "{B6D53D53-8C76-4AB7-BBF4-1D49DC533725}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,8 +36,21 @@ Global
 		{565BA09B-8C1F-415B-9A65-4E782679DF32}.Release|x64.Build.0 = Release|Any CPU
 		{565BA09B-8C1F-415B-9A65-4E782679DF32}.Release|x86.ActiveCfg = Release|Any CPU
 		{565BA09B-8C1F-415B-9A65-4E782679DF32}.Release|x86.Build.0 = Release|Any CPU
+		{B6D53D53-8C76-4AB7-BBF4-1D49DC533725}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6D53D53-8C76-4AB7-BBF4-1D49DC533725}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6D53D53-8C76-4AB7-BBF4-1D49DC533725}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B6D53D53-8C76-4AB7-BBF4-1D49DC533725}.Debug|x64.Build.0 = Debug|Any CPU
+		{B6D53D53-8C76-4AB7-BBF4-1D49DC533725}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B6D53D53-8C76-4AB7-BBF4-1D49DC533725}.Debug|x86.Build.0 = Debug|Any CPU
+		{B6D53D53-8C76-4AB7-BBF4-1D49DC533725}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6D53D53-8C76-4AB7-BBF4-1D49DC533725}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6D53D53-8C76-4AB7-BBF4-1D49DC533725}.Release|x64.ActiveCfg = Release|Any CPU
+		{B6D53D53-8C76-4AB7-BBF4-1D49DC533725}.Release|x64.Build.0 = Release|Any CPU
+		{B6D53D53-8C76-4AB7-BBF4-1D49DC533725}.Release|x86.ActiveCfg = Release|Any CPU
+		{B6D53D53-8C76-4AB7-BBF4-1D49DC533725}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{565BA09B-8C1F-415B-9A65-4E782679DF32} = {1516B659-41E4-424A-9EE9-37228FC04141}
+		{B6D53D53-8C76-4AB7-BBF4-1D49DC533725} = {138097D9-8EB4-4CD1-A05C-AF1D9837616E}
 	EndGlobalSection
 EndGlobal
