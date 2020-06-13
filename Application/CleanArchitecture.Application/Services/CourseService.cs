@@ -1,7 +1,8 @@
 using CleanArchitecture.Application.Interfaces;
 using CleanArchitecture.Application.ViewModels;
-using CleanArchitecture.Domain.Interfaces;
+using CleanArchitecture.Domain.Commands;
 using CleanArchitecture.Domain.Core.Bus;
+using CleanArchitecture.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 
@@ -22,7 +23,13 @@ namespace CleanArchitecture.Application.Services
 
         public void Create(CourseViewModel courseViewModel)
         {
+            var createCourseCommand = new CreateCourseCommand(
+                courseViewModel.Name,
+                courseViewModel.Description,
+                courseViewModel.ImageUrl
+            );
 
+            _bus.SendCommand(createCourseCommand);
         }
 
         public CourseViewModel GetCourses()
