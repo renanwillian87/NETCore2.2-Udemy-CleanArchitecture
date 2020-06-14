@@ -9,8 +9,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="7.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.4.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.4.1" />        
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infra.IoC\CleanArchitecture.Infra.IoC\CleanArchitecture.Infra.IoC.csproj" />
   </ItemGroup>
 
 </Project>
