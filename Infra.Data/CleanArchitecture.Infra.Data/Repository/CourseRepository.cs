@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Collections.Generic;
 using CleanArchitecture.Domain.Interfaces;
 using CleanArchitecture.Domain.Models;
@@ -20,11 +21,9 @@ namespace CleanArchitecture.Infra.Data.Repository
             _context.SaveChanges();
         }
 
-        public IEnumerable<Course> GetCourses()
+        public IQueryable<Course> GetCourses()
         {
             return _context.Courses;
-        }
-
-        
+        }        
     }
 } 
