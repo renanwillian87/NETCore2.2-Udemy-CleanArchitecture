@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CleanArchitecture.UI.Mvc.Configurations;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -51,6 +52,8 @@ namespace CleanArchitecture.UI.Mvc
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddMediatR(typeof(Startup));
+
+            services.RegisterAutoMapper();
 
             RegisterServices(services);
         }
