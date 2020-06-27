@@ -1,6 +1,6 @@
 # NETCore2.2-Udemy-CleanArchitecture
 
-## Course -> Udemy
+## Course
 Udemy Course
 https://www.udemy.com/course/getting-started-with-net-core-clean-architecture/
 
